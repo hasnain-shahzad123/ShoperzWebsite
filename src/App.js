@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react";
+import  ReactDOM  from "react-dom";
+import NavSecond from "./NavSecond";
+import Slider from './Slider'
+import './index.css';
+import 'styled-components'
+import NavBar from './NavBar';
+import Benefits from "./Benefits";
+import FeaturedProducts from "./FeaturedProducts";
+import BigDeals from "./BigDeals";
+import FooterSection from "./FooterSection";
+import FooterCoupen from './FooterCoupen'
+import BeneathFooter from "./BeneathFooter";
+const App=()=>{
+    return(
+        <>
+    <NavBar/>
+  <NavSecond/>
+  <Slider/>
+  <Benefits/>
+  <FeaturedProducts/>
+  <BigDeals/>
+  <FooterCoupen/>
+  <FooterSection/>
+  <BeneathFooter/>
+        </>
+    )
 }
-
 export default App;
